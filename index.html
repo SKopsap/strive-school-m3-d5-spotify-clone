@@ -135,7 +135,10 @@
             <div class="row my-4 mx-5">
               <div class="col col-12 ml-5">
                 <h2 class="font-weight-bold">#THROWBACKTHURSDAY</h2>
-                <div class="row my-4 d-flex justify-content-start">
+                <div
+                  id="homecards"
+                  class="row my-4 d-flex justify-content-start"
+                >
                   <div class="card mr-3 mt-1" style="border: 0px">
                     <img
                       src="https://i.scdn.co/image/ab67706f000000026705dfb8f5445fa4fdddf374"
@@ -2656,100 +2659,101 @@
     ></script>
     <script>
       function like(event) {
-        event.currentTarget.classList.toggle("fas");
+        event.currentTarget.classList.toggle('fas')
       }
 
-      document.getElementById("trending-btn").addEventListener(
-        "click",
+      document.getElementById('trending-btn').addEventListener(
+        'click',
         (showT = function () {
-          let X = document.querySelectorAll(".tabs .d-none");
-          let Z = document.querySelectorAll(".button");
+          let X = document.querySelectorAll('.tabs .d-none')
+          let Z = document.querySelectorAll('.button')
           for (let j = 0; j < Z.length; j++) {
-            Z[j].classList.remove("active");
+            Z[j].classList.remove('active')
           }
           for (let i = 0; i < X.length; i++) {
-            X[i].classList.remove("d-block");
+            X[i].classList.remove('d-block')
             if (i === 0) {
-              X[0].classList.toggle("d-block");
-              document.getElementById("trending-btn").classList.add("active");
+              X[0].classList.toggle('d-block')
+              document.getElementById('trending-btn').classList.add('active')
             }
           }
         })
-      );
+      )
 
-      document.getElementById("pod-btn").addEventListener(
-        "click",
+      document.getElementById('pod-btn').addEventListener(
+        'click',
         (showP = function () {
-          let X = document.querySelectorAll(".tabs .d-none");
-          let Z = document.querySelectorAll(".button");
+          let X = document.querySelectorAll('.tabs .d-none')
+          let Z = document.querySelectorAll('.button')
           for (let j = 0; j < Z.length; j++) {
-            Z[j].classList.remove("active");
+            Z[j].classList.remove('active')
           }
           for (let i = 0; i < X.length; i++) {
-            X[i].classList.remove("d-block");
+            X[i].classList.remove('d-block')
             if (i === 1) {
-              X[1].classList.toggle("d-block");
-              document.getElementById("pod-btn").classList.add("active");
+              X[1].classList.toggle('d-block')
+              document.getElementById('pod-btn').classList.add('active')
             }
           }
         })
-      );
+      )
 
-      document.getElementById("mood-btn").addEventListener(
-        "click",
+      document.getElementById('mood-btn').addEventListener(
+        'click',
         (showM = function () {
-          let X = document.querySelectorAll(".tabs .d-none");
-          let Z = document.querySelectorAll(".button");
+          let X = document.querySelectorAll('.tabs .d-none')
+          let Z = document.querySelectorAll('.button')
           for (let j = 0; j < Z.length; j++) {
-            Z[j].classList.remove("active");
+            Z[j].classList.remove('active')
           }
           for (let i = 0; i < X.length; i++) {
-            X[i].classList.remove("d-block");
+            X[i].classList.remove('d-block')
             if (i === 2) {
-              X[2].classList.toggle("d-block");
-              document.getElementById("mood-btn").classList.add("active");
+              X[2].classList.toggle('d-block')
+              document.getElementById('mood-btn').classList.add('active')
             }
           }
         })
-      );
+      )
 
-      document.getElementById("new-btn").addEventListener(
-        "click",
+      document.getElementById('new-btn').addEventListener(
+        'click',
         (showR = function () {
-          let X = document.querySelectorAll(".tabs .d-none");
-          let Z = document.querySelectorAll(".button");
+          let X = document.querySelectorAll('.tabs .d-none')
+          let Z = document.querySelectorAll('.button')
           for (let j = 0; j < Z.length; j++) {
-            Z[j].classList.remove("active");
+            Z[j].classList.remove('active')
           }
           for (let i = 0; i < X.length; i++) {
-            X[i].classList.remove("d-block");
+            X[i].classList.remove('d-block')
             if (i === 3) {
-              X[3].classList.toggle("d-block");
-              document.getElementById("new-btn").classList.add("active");
+              X[3].classList.toggle('d-block')
+              document.getElementById('new-btn').classList.add('active')
             }
           }
         })
-      );
+      )
 
-      document.getElementById("discover-btn").addEventListener(
-        "click",
+      document.getElementById('discover-btn').addEventListener(
+        'click',
         (showD = function () {
-          let X = document.querySelectorAll(".tabs .d-none");
-          let Z = document.querySelectorAll(".button");
+          let X = document.querySelectorAll('.tabs .d-none')
+          let Z = document.querySelectorAll('.button')
           for (let j = 0; j < Z.length; j++) {
-            Z[j].classList.remove("active");
+            Z[j].classList.remove('active')
           }
           for (let i = 0; i < X.length; i++) {
-            X[i].classList.remove("d-block");
+            X[i].classList.remove('d-block')
             if (i === 4) {
-              X[4].classList.toggle("d-block");
-              document.getElementById("discover-btn").classList.add("active");
+              X[4].classList.toggle('d-block')
+              document.getElementById('discover-btn').classList.add('active')
             }
           }
         })
-      );
+      )
 
-      window.onload = showT();
+      window.onload = showT()
     </script>
+    <script src="./home.js"></script>
   </body>
 </html>
