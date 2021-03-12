@@ -47,6 +47,14 @@ const createAlbum = (deneme) => {
 
 let album = []
 
+const getArtist = (artist_id) => {
+  fetch(`https://striveschool-api.herokuapp.com/api/deezer/artist/${artist_id}`)
+    .then((response) => response.json())
+    .then((resp) => {
+      console.log(resp)
+    })
+}
+
 const getAlbum = (artist_id) => {
   fetch(
     `https://striveschool-api.herokuapp.com/api/deezer/artist/${artist_id}/albums`
@@ -67,6 +75,7 @@ window.onload = function () {
   console.log(artist_id)
   if (artist_id) {
     getAlbum(artist_id)
+    getArtist(artist_id)
   } else {
     //window.location.replace('/')
   }
