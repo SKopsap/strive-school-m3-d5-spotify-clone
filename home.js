@@ -2,16 +2,30 @@ function getAlbums() {
   fetch('https://striveschool-api.herokuapp.com/api/deezer/artist/413/albums')
     .then((res) => res.json())
     .then(({ data }) => {
-      renderData(data.slice(1, 2))
+      renderData(data.slice(0, 6))
+    })
+    .catch((err) => console.error(err))
+}
+
+function getTop50() {
+  fetch('https://striveschool-api.herokuapp.com/api/deezer/top50')
+    .then((res) => res.json())
+    .then(({ data }) => {
+      renderData(data.slice(0, 6))
     })
     .catch((err) => console.error(err))
 }
 
 function renderData(data) {
-  const selected = document.querySelector('#homecards')
-  selected.innerHTML = ''
+  const firstRow = document.querySelector('#throwback')
+  firstRow.innerHTML = ''
   data.forEach((element) => {
-    selected.innerHTML += card(element)
+    firstRow.innerHTML += card(element)
+  })
+  const secondRow = document.querySelector('#classics')
+  secondRow.innerHTML = ''
+  data.forEach((element) => {
+    secondRow.innerHTML += card(element)
   })
 }
 
