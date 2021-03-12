@@ -1,18 +1,16 @@
 function getAlbums() {
-  fetch('https://striveschool-api.herokuapp.com/api/deezer/artist/412/albums')
+  fetch('https://striveschool-api.herokuapp.com/api/deezer/artist/413/albums')
     .then((res) => res.json())
-    .then((res) => {
-      renderData(res)
+    .then(({ data }) => {
+      renderData(data.slice(1, 2))
     })
     .catch((err) => console.error(err))
 }
 
 function renderData(data) {
-  const collection = data
-  const items = collection.data
   const selected = document.querySelector('#homecards')
   selected.innerHTML = ''
-  items.forEach((element) => {
+  data.forEach((element) => {
     selected.innerHTML += card(element)
   })
 }
@@ -34,7 +32,7 @@ function card(data) {
     class="container-fluid d-flex justify-content-between align-items-center icons"
   >
     <i class="far fa-heart" onclick="like(event)"></i>
-    <a href="artist.html"
+    <a id="myAnchor" href="artist.html?artist_id=${413}"
       ><i class="fas fa-play-circle fa-2x"></i
     ></a>
     <div class="dropdown">
