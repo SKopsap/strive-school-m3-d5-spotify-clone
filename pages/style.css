@@ -1,0 +1,444 @@
+@font-face {
+  font-family: Circular-bold;
+  src: url("/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
+}
+@font-face {
+  font-family: Circular-book;
+  src: url("/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
+}
+
+body {
+  font-family: "Circular-book", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.link-group {
+  list-style: none;
+}
+
+section {
+  color: #ccc;
+  height: 320px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h1,
+h3 {
+  font-family: "Circular-bold", sans-serif;
+  color: #fff;
+}
+
+div.ust-taraf {
+  display: none;
+}
+
+p.small-size {
+  font-size: 80%;
+  color: rgb(204 204 204 / 70%);
+  padding-top: 1.8rem;
+}
+
+.bg-img {
+  background: url(https://www.queenonline.com/global/uploads/86.jpg) no-repeat
+    center center/cover;
+  box-shadow: inset 100px 100px 200px rgba(0, 0, 0, 0.9),
+    inset -100px -100px 200px rgba(0, 0, 0, 0.85);
+}
+
+div ul li a {
+  color: #ccc;
+  font-size: 10px;
+  text-decoration: none !important;
+}
+
+div ul li a:hover {
+  color: #fff;
+}
+
+.tab-border {
+  border-bottom: 2px solid #1ed760;
+}
+
+.btn {
+  color: #fff;
+  background-color: transparent;
+  font-size: 10px;
+}
+
+.btn-1,
+.btn-2 {
+  border-radius: 20px;
+  padding: 5px 30px;
+  border: 1px solid #fff;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+  background-color: #1ed760;
+  border: 1px solid #1ed760;
+  color: #fff;
+}
+
+.btn-3 {
+  font-size: 180%;
+  padding-bottom: 15px;
+}
+
+.btn-3:hover {
+  color: white;
+}
+
+div .bg-mine,
+div .card-body {
+  background-color: rgb(21, 21, 22);
+}
+
+p.card-text {
+  color: #fff;
+  margin-bottom: 0.7rem;
+}
+
+div .card-body:nth-child(2) {
+  color: #ccc;
+}
+
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+div.row {
+  font-size: 12px;
+}
+
+div.col-10 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div.row div.col-lg-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div.card-body {
+  padding: 0.8rem;
+}
+
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+  background: #151516;
+  color: #fff;
+  font-size: 14px;
+}
+
+.show {
+  display: block !important;
+}
+
+#tab-3-content {
+  line-height: 1.5rem;
+  padding: 0 20px;
+  color: #ccc;
+  min-height: 700px;
+}
+
+.daire {
+  background-color: rgb(0, 129, 255);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute !important;
+  padding: 12px;
+  color: #fff;
+  max-width: 48px;
+  max-height: 48px;
+  text-align: center;
+  top: 0;
+  right: 0;
+  top: 12px;
+  right: 35px;
+  font-weight: 700;
+}
+
+#sidebar {
+  background-color: black;
+}
+
+#desktop-logo {
+  width: 130px;
+  height: 80px;
+}
+
+#mobile-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar-links,
+.artist-name,
+.album-year-songs,
+#desktop-logo,
+.artist-name,
+.song-duration {
+  color: #b3b3b3;
+}
+
+hr {
+  background-color: #b3b3b3;
+  height: 0.1px;
+  width: 90%;
+}
+
+#user-img {
+  height: 25px;
+  width: 25px;
+}
+
+#player {
+  background-color: #181818;
+  position: fixed;
+  bottom: 0;
+}
+#player-info img {
+  width: 60px;
+  height: 60px;
+}
+
+.player-buttons img {
+  width: 20px;
+  height: 20px;
+  color: #b3b3b3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#player-controls-mid {
+  width: 40%;
+  cursor: pointer;
+}
+#play-button {
+  background-color: black;
+  border-radius: 50%;
+  filter: invert(100%);
+  height: 30px;
+  width: 30px;
+}
+#seek-bar {
+  height: 3px;
+  width: 80%;
+  background-color: #b3b3b3;
+  border-radius: 20px;
+}
+#volume-controls img {
+  width: 20px;
+  height: 20px;
+}
+
+.volume-bar {
+  background-color: #b3b3b3;
+  height: 3px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+div.bunlar {
+  background-color: rgb(68, 69, 68);
+  border: 1px solid rgb(68, 69, 68);
+}
+
+div.bunlar img {
+  border-radius: 50%;
+}
+
+div.bunlar p {
+  text-align: center;
+}
+
+div.hadi {
+  background-color: rgb(68, 69, 68);
+  position: relative;
+}
+
+img.my-play {
+  position: absolute;
+  background-color: #1ed760;
+  border-radius: 50%;
+  padding: 10px 10px;
+  top: -57px;
+  right: 6px;
+  height: 40px;
+  width: 40px;
+}
+
+div.yeni-ler {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  section {
+    height: 300px;
+  }
+
+  #player {
+    max-height: 65px;
+  }
+
+  .col-10 {
+    min-width: 100%;
+  }
+
+  .bg-img {
+    background: url(./assets-helper/about14.jfif) no-repeat center center/cover;
+    box-shadow: inset 100px 100px 200px rgba(0, 0, 0, 0.5),
+      inset -100px -100px 200px rgba(0, 0, 0, 0.5);
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  div.buttons.pt-2 {
+    display: none;
+  }
+
+  a.tab-item {
+    display: none;
+  }
+
+  div.ust-taraf {
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    font-size: 20px;
+    padding-top: 10px;
+    align-items: center;
+  }
+
+  div.ust-taraf div.sag-taraf {
+    display: flex;
+    padding-right: 10px;
+  }
+
+  div.ust-taraf div.sol-taraf {
+    padding-bottom: 5px;
+  }
+
+  .follow-button {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    border: 0px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    max-height: 28px;
+  }
+
+  .uc-nokta {
+    transform: rotate(90deg);
+    height: 28px;
+    color: white;
+    letter-spacing: 2.3px;
+  }
+
+  p.yandik {
+    transform: rotate(90deg);
+  }
+
+  .ok-left {
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+  }
+
+  .ikinci {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .ikinci h1 {
+    padding-top: 20px;
+    font-weight: 500;
+    color: white;
+    padding-top: 70px;
+  }
+
+  div.hepsi {
+    display: none;
+  }
+
+  div.yeni-ler {
+    background-color: rgb(21, 21, 22);
+    display: block;
+    min-height: 460px;
+    position: relative;
+  }
+
+  div.yeni-ler h3 {
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  div.yeni-ler button {
+    color: white;
+    background-color: #1ed760;
+    border: 0px solid #1ed760;
+    border-radius: 24px;
+    padding: 15px 50px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  div.sarkilar {
+    padding-top: 20px;
+    color: white;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  div.sarkilar img {
+    min-height: 50px;
+    min-width: 50px;
+  }
+
+  p.yandik {
+    transform: rotate(90deg);
+    padding-left: 10px;
+    font-size: 20px;
+    color: #ccc;
+  }
+
+  div.sarkilar div.col-6 p {
+    margin-bottom: 0;
+  }
+
+  div.sarkilar small {
+    color: #ccc;
+  }
+
+  h3.popular {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .show {
+    display: none !important;
+  }
+}

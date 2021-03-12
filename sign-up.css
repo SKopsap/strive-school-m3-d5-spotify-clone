@@ -1,0 +1,273 @@
+@font-face {
+  font-family: Circular-bold;
+  src: url("/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
+}
+@font-face {
+  font-family: Circular-book;
+  src: url("/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Circular-book;
+}
+/*---------- Logo nav---------------*/
+.logo {
+  max-width: 132px;
+  padding-top: 32%;
+  padding-bottom: 21%;
+}
+/*---------- container---------------*/
+.content {
+  max-width: 450px;
+}
+/* warning sign up */
+.warning-sign-up {
+  text-align: center;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+  font-size: 30px;
+  font-family: Circular-bold;
+  padding-bottom: 0px;
+  font-weight: 700;
+}
+/*---------- BUTTON---------------*/
+.button {
+  margin-top: 10px;
+  border-radius: 500px;
+  height: 48px;
+  text-align: center;
+  width: 100%;
+  font-family: Circular-book;
+  transition-duration: 0.3s;
+  border-width: 0;
+  letter-spacing: 2px;
+  min-width: 160px;
+  font-weight: 600;
+  padding: 14px 14px 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+/* divider*/
+.divider {
+  width: 85%;
+  border-top: 1px solid #d9dadc;
+  margin: 20px 0;
+  margin-left: 24px;
+  line-height: 1px;
+  text-align: center;
+  position: relative;
+}
+.divider-title {
+  color: rgb(117, 117, 117);
+
+  background: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+}
+/* Sign up with email */
+.sign-up-email {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  padding: 0px 0px 1em;
+}
+/* Standart link */
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  padding: 0px;
+}
+label {
+  color: rgb(24, 24, 24);
+  font-weight: 700;
+  font-size: 14px;
+}
+.agreetment,
+label[for="checkbox-1"],
+label[for="checkbox-2"],
+label[for="checkbox-3"] {
+  font-weight: 100;
+}
+/* Facebook button */
+.facebook-login {
+  color: white;
+  background: #3b5998;
+  transition: all 0.1s ease-in-out;
+}
+.facebook-login:hover {
+  background-color: #6179ad;
+  cursor: pointer;
+  transition: 35ms;
+  transform: scale(1.1);
+}
+.facebook-image {
+  height: 16px;
+  margin-bottom: 8px;
+  margin-right: 4px;
+}
+/* form inputs*/
+.form-control {
+  font-size: 14px;
+}
+.non-arrows {
+  margin-top: 3%;
+  height: 65%;
+  width: 100%;
+  box-shadow: rgb(189 189 189) 0px 0px 0px 0px inset;
+}
+.non-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[class="form-control"] {
+  box-shadow: rgb(189 189 189) 0px 0px 0px 0px inset;
+  padding: 14px;
+  height: 50px;
+}
+/* Input of the day of birth */
+.date-birth,
+.gender {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 575px) {
+  #months {
+    margin-top: 3%;
+    margin-bottom: 6%;
+    height: 56%;
+    width: 100%;
+  }
+  .non-arrows {
+    margin-top: 3%;
+    margin-bottom: 6%;
+    height: 56%;
+    width: 100%;
+  }
+}
+/* checkbox style */
+input[type="checkbox"] + label {
+  margin: 0.2em;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label:before {
+  content: "\25CF";
+  border: 1px solid rgb(117, 117, 117);
+  border-radius: 1em;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 3px;
+  padding-bottom: 19px;
+  margin-right: 15px;
+  vertical-align: bottom;
+  color: transparent;
+}
+input[id="checkbox-4"] + label:before {
+  content: "\2713";
+  border: 1px solid rgb(117, 117, 117);
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-left: 3px;
+  margin-right: 7px;
+  vertical-align: bottom;
+  color: transparent;
+}
+input[type="checkbox"]:hover + label:before {
+  border: 1px solid rgb(29, 185, 84);
+}
+input[type="checkbox"]:checked + label:before {
+  background-color: rgb(29, 185, 84);
+  border: 1px solid rgb(29, 185, 84);
+  color: white;
+}
+input[id="checkbox-4"]:checked + label:before {
+  background-color: #15883e;
+  border: 1px solid #15883e;
+  color: white;
+  transition: 502ms;
+}
+.rc-anchor-normal {
+  height: 80px;
+  width: 313px;
+}
+/* terms and condition */
+span a {
+  text-align: center;
+  color: rgb(22, 214, 90);
+  text-decoration: underline;
+}
+span a:hover {
+  color: rgb(37, 240, 108);
+  text-decoration: underline;
+}
+/* sign-up button style*/
+.sign-up {
+  background-color: rgb(29, 185, 84);
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+.sign-up:hover {
+  background-color: rgb(22, 214, 90);
+  transition: 35ms;
+  transform: scale(1.1);
+}
+.accept-condition,
+.policy-privacy,
+.login-again {
+  font-size: 11px;
+  padding-top: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  text-align: center;
+}
+.login-again {
+  font-size: 16px;
+  margin-top: 25px;
+  padding-bottom: 100px;
+}
+.login-again a {
+  color: rgb(22, 214, 90);
+}
+#months {
+  margin-top: 3%;
+  height: 66%;
+  width: 100%;
+  box-shadow: rgb(189 189 189) 0px 0px 0px 0px inset;
+}
+.name-of-month {
+  font-size: 91%;
+  padding: 8px;
+  padding-left: 6px;
+  margin: 0;
+}
+.name-of-month h6:hover {
+  background-color: rgb(63, 134, 240);
+  width: 100%;
+  padding: 0;
+  color: white;
+}
+/* Warnings */
+.warning {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  margin-top: 8px;
+  color: rgb(226, 33, 52);
+}
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  height: 50px;
+}

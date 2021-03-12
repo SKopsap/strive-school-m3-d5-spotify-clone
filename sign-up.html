@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" 
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="sign-up.css" />
+
+    <title>Spotify</title>
+  </head>
+  <!-- login-page-->
+  <!-- logo-start-->
+  <body>
+      <div class="container-fluid logo-container w-100">
+        <div class="row ">
+          <div class="col-sm-6 offset-sm-3">
+            <div class="d-flex justify-content-center ">
+              <a href="https://www.spotify.com/ie/premium/?utm_source=ie-en_brand_contextual-desktop_text&utm_medium=paidsearch&utm_campaign=alwayson_emea_ie_premiumbusiness_core_brand+contextual-desktop+text+exact+ie-en+google&gclid=Cj0KCQiA4feBBhC9ARIsABp_nbXZRcW_DnJ3MNGZyEK_UDd5w53xuhG4I_Q3tP_wEtXHZedYfAsu84EaArHtEALw_wcB&gclsrc=aw.ds"><img class="logo" src="/logo/Spotify_Logo_CMYK_Black.png" alt="spotify-logo"></a>
+            </div>   
+            </div>
+        </div>
+      </div>
+    </div>
+      <!-- logo-End-->
+      <!-- content-start-->
+  <div class="container mt-3 content w-100">
+       <h2 class="warning-sign-up">Sign up for free to start listening.</h2>
+       <div class="row mt-3">
+        <div class="col-sm-12">
+          <form action="https://www.facebook.com/" target="_blank">
+            <button type="submit" class="facebook-login button">sign up with facebook
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Divider-->
+      <div class="row">
+        <div class="col-sm-12 pt-3 pb-1">
+          <div class="divider">
+            <span class="divider-title ng-binding">or</span>
+          </div>
+        </div>
+      </div>
+      <h2 class="sign-up-email pb-1">Sign up with your email address</h2>
+
+            <!-- Form -->
+        <form class="needs-validation" action="index.html" novalidate> 
+          <div class="row pb-4">
+            <div class="col-sm-12 ">
+              <label for="email" >What's your email?</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email." aria-describedby="emailHelp" required>
+              <div class="invalid-feedback">Invalid email.</div>
+            </div>
+
+          </div>
+          <div class="row pb-4">
+            <div class="col-sm-12">
+              <label for="confirm-email" >Confirm your email</label>
+              <input type="email" class="form-control" id="confirm-email" placeholder="Enter your email again." required >
+              <div class="invalid-feedback">Confirm your email.</div>
+            </div>
+          </div>
+          <div class="row pb-4">
+            <div class="col-sm-12">
+              <label for="password" >Create a password</label>
+              <input type="password" class="form-control" id="password" placeholder="Create a password." required>
+              <div class="invalid-feedback">You need to enter your password.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <label for="nickname" >What should we call you?</label>
+              <input type="text" class="form-control" id="nickname" placeholder="Enter a profile name." required >
+              <div class="invalid-feedback">You need to enter your nickname.</div>
+            </div>
+          </div>
+          <h6 class="pb-4 m-0 mt-2">This appears on your profile.</h6>
+          <div class="container pl-0">
+          <div class="row">
+            <div class="col-lg-12">
+               <span class="date-birth"> What's your date of birth? </span>
+            </div>
+                <div class="col-sm-3">Day
+                    <input type="number" class="form-control non-arrows" id="day" placeholder="DD" required>
+                    <div class="invalid-feedback"></div>
+                  </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-1">Month</h6>
+                    <select name="months" required="" class="name-of-month form-control" id="months" required>
+                        <option selected="" disabled="" value="">Month</option>
+                        <option value="01">January</option>
+                        <option value="02">February</option>
+                        <option value="03">March</option>
+                        <option value="04">April</option>
+                        <option value="05">May</option>
+                        <option value="06">June</option>
+                        <option value="07">July</option>
+                        <option value="08">August</option>
+                        <option value="09">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <div class="col-sm-3">Year
+                    <input type="year" class="form-control" id="year" placeholder="YYYY" required>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+          </div>
+          <div class="row checkingbox">
+              <div class="col-sm-12">
+                  <h6 class="gender mt-4 mb-2">What's your gender?</h6>
+                  <input type="checkbox" onchange=check(this) name="gender" id="checkbox-1">
+                  <label for="checkbox-1">Male</label>
+                  <input type="checkbox" onchange=check(this) name="gender" id="checkbox-2">
+                  <label for="checkbox-2">Female</label>
+                  <input type="checkbox" onchange=check(this) name="gender" id="checkbox-3">
+                  <label for="checkbox-3">Non-binary</label>
+              </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-sm-1 col-lg-1">
+                  <input checked type="checkbox" name="remember" id="checkbox-4">
+                  <label for="checkbox-4"></label>
+            </div>
+                  <div class="col-sm-11 col-lg-11">
+                    <label class="agreetment" for="checkbox">Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of the EEA as described in our privacy policy.</label>
+                </div>
+            
+          </div>
+          <div class="row mt-3">
+              <div class="col-sm-12">
+                  <div>
+                      <iframe class="rc-anchor-normal" src="https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lenb9oUAAAAAO1Rqrm4KsoNH14OvMm6SWkQcdRj&co=aHR0cHM6Ly93d3cuc3BvdGlmeS5jb206NDQz&hl=es&v=jxFQ7RQ9s9HTGKeWcoa6UQdD&size=normal&cb=hpv9j3asp6nv" frameborder="0"></iframe>
+                  </div>
+
+              </div>
+
+          </div>
+          
+        
+      <!-- Last part -->
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="accept-condition">
+                  <span>By clicking on Sign up, you agree to Spotify's <a href="https://www.spotify.com/ie/legal/end-user-agreement/" target="_blank"> Terms and Conditions of Use</a>.</span>
+              </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-12">
+            <div  class="policy-privacy">
+                <span>To learn more about how Spotify collects, uses, shares and protects your personal data please read Spotify's <a href="/ie/legal/privacy-policy/" target="_blank">Privacy Policy</a>.</span>
+            </div>
+        </div>
+    </div>
+            <div class="row">
+              <div class="col-sm-12">
+                  
+                  <button type="submit" class="sign-up button">Sign up</button>
+        </form>
+              </div>
+            </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="login-again">
+                    <span>Have an account?<a href="log-in.html"> Log in</a>.</span>
+                </div>
+            </div>
+        </div>
+  </div>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script>
+        function check(el){  
+                 var gender = document.getElementsByName("gender")
+                 gender.forEach(function(item){  
+                     if(item!=el)  
+                         item.checked = false
+                 })  
+             }
+      </script>
+               
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+    
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          ("use strict")
+          window.addEventListener(
+            "load",
+            function () {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName("needs-validation")
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(
+                forms,
+                function (form) {
+                  form.addEventListener(
+                    "submit",
+                    function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add("was-validated")
+                    },
+                    false
+                  )
+                }
+              )
+            },
+            false
+          )
+        })()
+      </script>
+       <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          $(".needs-validation")
+            .find("input,select,textarea")
+            .on("focusout", function () {
+              // check element validity and change class
+              $(this)
+                .removeClass("is-valid is-invalid")
+                .addClass(this.checkValidity() ? "" : "is-invalid")
+            })
+        })()
+      </script>
+    
+  </body>
+</html>

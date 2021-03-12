@@ -1,0 +1,227 @@
+@font-face {
+  font-family: Circular-bold;
+  src: url("/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2");
+}
+@font-face {
+  font-family: Circular-book;
+  src: url("/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
+}
+body {
+  font-family: Circular-book;
+}
+/*---------- Logo nav---------------*/
+.logo {
+  max-width: 173px;
+  padding-top: 13%;
+  padding-bottom: 12%;
+}
+
+.logo-container {
+  border-bottom: 1px solid #d9dadc;
+}
+/*---------- container---------------*/
+.content {
+  max-width: 450px;
+}
+/*---------- BUTTON---------------*/
+.button {
+  margin-top: 10px;
+  border-radius: 500px;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  font-family: Circular-book;
+  transition-duration: 0.3s;
+  border-width: 0;
+  letter-spacing: 2px;
+  min-width: 160px;
+  font-weight: 600;
+  padding: 11px 14px 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+}
+/* media screen */
+@media only screen and (max-width: 305px) {
+  .logo {
+    height: 80px;
+  }
+  button[class="facebook-login button"],
+  button[class="apple-login button"],
+  button[class="google-login-and-sign-up button"] {
+    height: 70px;
+  }
+  .facebook-image {
+    display: none;
+  }
+  .apple-image {
+    display: none;
+  }
+  .google-image {
+    display: none;
+  }
+}
+/* Standart link */
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  padding: 0px;
+}
+
+/* Facebook button */
+.facebook-login {
+  color: white;
+  background: #3b5998;
+}
+.facebook-login:hover {
+  background-color: #48649f;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.facebook-image {
+  height: 16px;
+  margin-bottom: 8px;
+  margin-right: 4px;
+}
+/* Apple Button */
+.apple-login {
+  color: white;
+  background: #000;
+}
+.apple-login:hover {
+  background-color: #2a2c2e;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.apple-image {
+  height: 17px;
+  margin-bottom: 7px;
+  margin-right: 5px;
+}
+/* Google button */
+.google-login-and-sign-up {
+  background-color: transparent;
+  border: 2px solid #616467;
+}
+.google-login-and-sign-up {
+  color: #616467;
+}
+.google-login-and-sign-up:hover {
+  box-shadow: inset 0 0 0 2px #616467;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  background-color: #616467;
+  color: white;
+}
+.google-image {
+  height: 18px;
+  margin-bottom: 4px;
+}
+/* Divider */
+.divider {
+  width: 100%;
+  display: block;
+  border-top: 1px solid #d9dadc;
+  margin: 20px 0;
+  line-height: 1px;
+  text-align: center;
+  position: relative;
+}
+.divider-title {
+  padding-top: 100px;
+  background: #fff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+/*  Input form  */
+::placeholder {
+  color: #616467 !important;
+  font-weight: 600;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9dadc;
+  border-radius: 0;
+}
+.forgot-password {
+  text-decoration: underline;
+  color: #616467;
+}
+.forgot-password:hover {
+  color: #15883e;
+  text-decoration: underline;
+}
+input[type="checkbox"] + label {
+  margin: 0.2em;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label:before {
+  content: "\2713";
+  border: 1px solid #15883e;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  vertical-align: bottom;
+  color: transparent;
+  cursor: pointer;
+  padding-left: 1px;
+  padding-bottom: 19px;
+}
+input[type="checkbox"]:checked + label:before {
+  background-color: #15883e;
+  color: white;
+}
+
+.login-enter {
+  margin-top: 0px;
+  background-color: #15883e;
+}
+.login-enter:hover {
+  background-color: #1ed760;
+  cursor: pointer;
+}
+.login-enter a {
+  color: #fff;
+}
+.sign-up {
+  background-color: transparent;
+  border: 1px solid #616467;
+}
+h4 {
+  letter-spacing: normal;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-family: inherit;
+  font-weight: 900;
+  line-height: 1.1;
+  color: inherit;
+  margin: 0.5em 0 0.25em;
+}
+.footer-container {
+  margin-top: 15px;
+  border-top: 1px solid #d9dadc;
+  justify-content: center;
+}
+.footer-container p strong a {
+  color: #15883e;
+}
+.footer-container p {
+  color: #616467;
+  margin-top: 15px;
+  font-family: Circular-book;
+  text-align: center;
+  font-size: 10px;
+}
